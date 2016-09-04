@@ -65,7 +65,7 @@ function updatePoints(interval) {
     return httpGet(pointsUrl)
         .then(Graphics.drawPoints.bind(Graphics))
         .catch(console.error.bind(console))
-        .then(delay.bind(undefined, 2000))
+        .then(delay.bind(undefined, interval))
         .then(updatePoints);
 
 }
