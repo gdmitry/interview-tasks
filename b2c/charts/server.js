@@ -31,7 +31,7 @@ function updatePoints() {
 initPoints();
 setInterval(updatePoints, CONFIG.POINTS.UPDATE_INTERVAL);
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/api/v1/config', function (req, res) {
 	res.json(CONFIG);
