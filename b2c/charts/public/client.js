@@ -57,11 +57,7 @@
     function updateConfig(data) {
         config.points = data.POINTS;
         return config;
-    }
-
-    function getUpdateInterval(config) {
-        return config.points.UPDATE_INTERVAL;
-    }
+    }   
 
     function delay(interval) {
         return new Promise(function (resolve) {
